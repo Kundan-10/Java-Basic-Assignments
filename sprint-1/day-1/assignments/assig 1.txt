@@ -1,0 +1,51 @@
+Ans 1.  JDK or Java SDK Java Standard Edition comes in the form of Specification, and the implementation of this specification is the JDK software, also known as Java SDK (Java Standard Development Kit). This JDK software is used for developing and executing Java applications. Day1: Java Introduction 4 JDK = (JRE + Development tools like java compiler, debugger, etc.) JRE = (JVM + Predefined Library classes
+
+
+
+
+
+Ans: 2. Java Standard Edition (JSE) This is the core Java platform, it is a specification, which contains the core libraries to develop standalone, networking, database, GUI, and multithreaded types of applications. In addition to the core API, the Java SE platform consists of the virtual machine, Day1: Java Introduction 2 development tools, deployment technologies and other class libraries and toolkit commonly used in Java application 2. Java Enterprise Edition (JEE) The Java EE platform provides an API and runtime environment for developing and running large-scale, multi-tiered, scalable, reliable, and secure network applications. 3.Java Micro Edition (JME) It is a subset of Java SE, designed and used for microdevices and embedded development like mobile phones, sensors, micro-controller, TV set-top boxes etc.
+
+
+
+
+Ans3  Java is platform-independent because it does not depend on any type of platform. Hence, Java is a platform-independent language. Important Points In Java, programs are compiled into byte code and that byte code is platform-independent. The byte code is executed by the Java Virtual Machine and the Java Virtual Machine is platform-dependent.
+
+
+Ans4. Features of Java
+The primary objective of Java programming language creation was to make it portable, simple and secure programming language. Apart from this, there are also some excellent features which play an important role in the popularity of this language. The features of Java are also known as Java buzzwords.
+A list of the most important features of the Java language is given below.
+
+Simple
+Object-Oriented
+Portable
+Platform independent
+Secured
+Robust
+Architecture neutral
+Interpreted
+High Performance
+Multithreaded
+Distributed
+Dynamic
+ 
+ 
+Ans 5.
+ 
+ 
+class Demo{
+ 
+ 
+public static void main(String[] args){
+ 
+System.out.println("Name:kundan wakudkar");
+System.out.println("Father\'s Name:prabhakar wakudkar");
+System.out.println("Mother\'s Name:kundan wakudkar");
+System.out.println("Age:"+ 21);
+System.out.println("Gender:"+"Male");
+System.out.println("Adress:"+"maharastra , nagpur");
+System.out.println("Phone No:"+"777201032");
+ 
+}
+}
+

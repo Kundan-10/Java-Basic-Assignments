@@ -1,0 +1,57 @@
+::Define Wrapper Classes in Java.
+
+A Wrapper class is a class whose object wraps or contains primitive data types. When we create an object to a wrapper class, it contains a field and in this field, we can store primitive data types. In other words, we can wrap a primitive value into a wrapper class object.
+
+
+
+
+-java supports 8 primitive datatypes under 4 categories:
+
+A. Integers:
+
+1.byte  8 bit/1 byte   0   -128 to 127 
+2.short 16bit / 2 byte  0
+3.int 32 bit/ 4 byte  0 
+4.long 64 bit/ 8byte  0
+
+B.Real numbers:
+
+5. float 32 bit or 4 bytes   0.0
+6.double 64 bit or 8byte  0.0
+
+C. Charecters:
+
+7.char --- 16 bit or 2 byte  ' '
+
+D. Boolean 
+
+8. boolean -- 1 bit  (true  or false) : false
+
+Note: any number with the decimal point value would be accepted by the jvm as double not as a float;
+
+
+
+Q4) Explain why the following block of code will give a compile time error?
+
+
+public class Main {
+public static void main(String[] args) {
+float f=3.3;
+System.out.println(f);
+}
+}
+
+reasone:-
+
+3.3 is categarious in double so we trying to assign double to float .
+so we can not assign double to float;
+
+
+public class Main {
+public static void main(String[] args) {
+float f=3.3f;
+System.out.println(f);
+}
+}
+
+after is gave to float value to the f variables;

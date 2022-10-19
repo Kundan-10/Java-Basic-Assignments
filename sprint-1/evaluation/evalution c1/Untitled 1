@@ -1,0 +1,20 @@
+que 2;
+
+ans:-
+
+
+1:- java is platform - independent because it uses a virtual machine
+(jmv);
+2;-in java their a method we can code once and run any platform;
+with the help of jmv;
+
+the java programming language and all api's are complied into bytecodes,all programig are converted too bytecde
+its help to run any platform,
+
+3:-- Bytecodes are iffectively platform independent.
+ 
+ 4:- the virtual machin takes care of the diffresces between the bytecodes for the different platform .
+ 
+ 5:-there are various reasone for the inpedency of java when we execute that code the java file convert into the classes after 
+ convertig into class it will execute in any operating system 
+

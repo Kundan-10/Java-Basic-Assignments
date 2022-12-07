@@ -1,0 +1,70 @@
+
+ * Method Overloading *
+ 
+ 
+ =>  Method overloading is known as compile-time polymorphism.
+ 
+ => For overloading to come into picture, 
+ there must be at least two methods of the same name.
+ 
+ =>The methods must have different number of parameters. 
+ If both the methods have the same number of parameters,
+  then their type must be different.
+  
+  example:-
+ 
+ public class Sample{
+   public static void add(int a, int b){
+      System.out.println(a+b);
+   }
+   public static void add(int a, int b, int c){
+      System.out.println(a+b+c);
+   }
+   public static void main(String args[]){
+      Sample obj = new Sample();
+      obj.add(20, 40);
+      obj.add(40, 50, 60);
+   }
+}
+
+output :-
+
+60
+150
+
+ 
+ *	Method Overriding *
+ 
+ => Method overriding is known as runtime polymorphism.
+ 
+ => For overriding to work,
+  we need to have at least one method with the same name in both the parent class as well as the child class.
+ 
+ =>Both the methods must have the same number of parameters with the same type.
+ 
+ 
+ example:-
+ 
+ class SuperClass{
+   public static void sample(){
+      System.out.println("Method of the super class");
+   }
+}
+public class SubClass extends SuperClass {
+   public static void sample(){
+      System.out.println("Method of the sub class");
+   }
+   public static void main(String args[]){
+      SuperClass obj1 = new SubClass();
+      SubClass obj2 = new SubClass();
+      obj1.sample();
+      obj2.sample();
+   }
+}
+
+
+output :- 
+
+Method of the super class
+Method of the sub class
+ 

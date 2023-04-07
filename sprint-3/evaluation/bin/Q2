@@ -1,0 +1,61 @@
+  difference between Early and Late Binding
+  
+  
+ * binding *
+ 
+ 
+ connecting method body to method call is know as binding.
+ 
+ 
+ *  early binding  *
+ 
+ => decided at the compile time then it is know as early binding method also
+ know as overloading or polymorphism.
+ 
+ ex.
+ 
+ 
+class Animal{
+ 
+ class Dog extends Animal{
+
+ 
+ 
+ 
+ public static void main(STring args[]){
+ dog ani=new Dog();
+ 
+
+ 
+ }
+ }
+ 
+ 
+ 
+ * late binding *
+ 
+ decided by the jvm at a runtime know as the late binding(method orrideing or polymorphism).
+ 
+ 
+ exa 
+ 
+ class Animal{
+ 
+ void eat(){
+   System.out.println("animal are eating);
+ }
+ 
+ class Dog extends Animal{
+ void eat(){
+ system.out.println("dog is eating")
+ 
+ 
+ 
+ public static void main(STring args[]){
+ Animal ani=new Dog();
+ 
+ a.eat();
+ 
+ }
+ }
+ }

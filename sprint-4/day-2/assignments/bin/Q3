@@ -1,0 +1,70 @@
+Q3) Explain AutoBoxing and Auto UnBoxing with Examples.
+
+
+             ** AutoBoxing ** 
+             
+   In Java, primitive data types are treated differently so do there comes the introduction of wrapper classes where two components play a role namely Autoboxing and Unboxing. 
+   Autoboxing refers to the conversion of a primitive value into an object of the corresponding wrapper class is called autoboxing. 
+   For example, converting int to Integer class.
+    The Java compiler applies autoboxing when a primitive value is: 
+
+Pas..sed as a parameter to a method that expects an object of the
+ corresponding wrapper class.
+Ass..igned to a variable of the corresponding wrapper class.        
+
+
+             ** Unboxing **  
+             
+  Unboxing on the other hand refers to converting an object of a wrapper type to its corresponding primitive value. 
+  For example conversion of Integer to int. The Java compiler applies to unbox when an object of a wrapper class is: 
+
+Passed as a parameter to a method that expects a value of the corresponding primitive type.
+Assigned to a variable of the corresponding primitive type.
+
+
+Primitive Type	  Wrapper Class
+boolean	          Boolean
+byte	           Byte
+char	           Character
+float 	            Float
+int 	            Integer
+long	           Long
+short 	            Short
+double	            Double
+
+
+// Java program to illustrate the Concept
+// of Autoboxing and Unboxing
+ 
+// Importing required classes
+import java.io.*;
+ 
+// Main class
+class GFG {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+ 
+        // Creating an Integer Object
+        // with custom value say it be 10
+        Integer i = new Integer(10);
+ 
+        // Unboxing the Object
+        int i1 = i;
+ 
+        // Print statements
+        System.out.println("Value of i:" + i);
+        System.out.println("Value of i1: " + i1);
+ 
+        // Autoboxing of character
+        Character gfg = 'a';
+ 
+        // Auto-unboxing of Character
+        char ch = gfg;
+ 
+        // Print statements
+        System.out.println("Value of ch: " + ch);
+        System.out.println(" Value of gfg: " + gfg);
+    }
+}

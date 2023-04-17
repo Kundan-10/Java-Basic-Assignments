@@ -1,0 +1,116 @@
+Explain the difference between ArrayList and LinkedList
+
+
+                       ** ArrayList **
+    
+ >>  This class uses a dynamic array to store the elements in it.
+    With the introduction of generics, this class supports the storage of all types of objects. 
+     
+>>  Manipulating ArrayList takes more time due to the internal implementation. 
+W   henever we remove an element, internally, the array is traversed and the memory bits are shifted.
+
+>>  This class implements a List interface. Therefore, this acts as a list.
+
+>>  This class works better when the application demands storing the data and accessing it.
+
+
+exam:- 
+
+
+// Importing required classes
+import java.io.*;
+import java.util.*;
+ 
+// Main class
+class GFG {
+ 
+    // Main driver method
+    public static void main(String[] args)
+    {
+        // Creating an ArrayList of Integer type
+        ArrayList<Integer> arrli
+            = new ArrayList<Integer>();
+ 
+        // Appending the new elements
+        // at the end of the list
+        // using add () method via for loops
+        for (int i = 1; i <= 5; i++)
+            arrli.add(i);
+ 
+        // Printing the ArrayList
+        System.out.println(arrli);
+ 
+        // Removing an element at index 3
+        // from the ArrayList
+        // using remove() method
+        arrli.remove(3);
+ 
+        // Printing the ArrayList after
+        // removing the element
+        System.out.println(arrli);
+    }
+}
+
+**output
+
+[1, 2, 3, 4, 5]
+[1, 2, 3, 5]
+
+   
+                        ** LinkedList **
+                        
+                        
+ >>   This class uses a doubly linked list to store the elements in it. Similar to the ArrayList,
+      this class also supports the storage of all types of objects.    
+  
+ >>   Manipulating LinkedList takes less time compared to ArrayList because, in a doubly-linked list, there is no concept of shifting the memory bits. 
+      The list is traversed and the reference link is changed.  
+      
+ >>   This class implements both the List interface and the Deque interface. 
+      Therefore, it can act as a list and a deque.  
+      
+ >>   This class works better when the application demands manipulation of the stored data.   
+ 
+ 
+ example:-
+ 
+ 
+  
+// Importing required classes
+import java.util.*;
+ 
+// Main class
+class GFG {
+ 
+    // main driver method
+    public static void main(String args[])
+    {
+ 
+        // Creating an object of the
+        // class linked list
+        LinkedList<String> object
+            = new LinkedList<String>();
+ 
+        // Adding the elements to the object created
+        // using add() and addLast() method
+ 
+        // Custom input elements
+        object.add("A");
+        object.add("B");
+        object.addLast("C");
+ 
+        // Print the current LinkedList
+        System.out.println(object);
+ 
+        // Removing elements from the List object
+        // using remove() and removeFirst() method
+        object.remove("B");
+        object.removeFirst();
+ 
+        System.out.println("Linked list after "
+                           + "deletion: " + object);
+    }
+}
+Output: 
+[A, B, C]
+Linked list after deletion: [C]                 
